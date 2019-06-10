@@ -1,0 +1,86 @@
+.Homecontainer {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+/* styling for texts */
+
+
+.headText{
+    position: absolute;
+  font-family: 'Poiret One', cursive;
+   top: 20%;                                                    /*head text */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 27px;
+    animation: text 3s 1
+   
+}
+.bigStream{
+  position: absolute;
+   font-family: 'Ramabhadra', sans-serif;
+     color: black; 
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;                                                /* big stream text */
+    font-size: 40px;
+     animation: text 3s 1
+       
+}
+
+.storyText{
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    left: 45%;
+    font-size: 22px;
+    
+}
+.text2{
+    position: absolute;
+  font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    text-align: center;
+    top: 107%;
+    left: 35%;
+   
+}
+
+
+/* animation */
+
+
+
+@keyframes text{
+    0%{
+        color: aliceblue;
+        margin-bottom: -40px;     
+    }
+    30%{
+        letter-spacing: 25%;
+        margin-bottom: -40px;
+    }
+    85%{
+       letter-spacing: 8%;
+        margin-bottom: -40px;
+    }
+}
+
+.macLap h1{
+    position: absolute;
+   font-family: 'Ramabhadra', sans-serif;
+    top: 280%;
+    left: 10%;
+    color:white;
+    
+}
+.macLap h4{
+    position: absolute;
+     font-family: 'Poiret One', cursive;
+    top: 290%;
+    left: 8.5%;
+    color: white;
+}
+

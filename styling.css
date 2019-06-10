@@ -1,0 +1,229 @@
+/* image formatting */
+
+
+
+/* button styling */
+
+hr{
+    
+    
+}
+span.trophy {
+  display: inline; /* the default for span */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: none;  
+  background-color: white; 
+}
+.container{
+    position: absolute;
+    top: 200%;
+    
+    
+    
+}
+table { 
+   padding: 30px;
+ 
+}
+.formClass{
+    position: absolute;
+    top: 200%;
+    left: 45%;
+    
+    
+}
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+   height:60px;
+    font-size:14pt;
+   
+}
+#message{
+   position: absolute;
+   bottom: 60px;
+   text-align: center;
+   width: 120%;
+    left: 400px;
+
+    
+    
+}
+#name{
+   position: absolute;
+   bottom:50px;
+   text-align: center;
+   width: 120%;
+    left: 50px;
+
+    
+    
+}
+
+.card1{
+
+  position :absolute;
+  top:137%;
+  left :12%;
+}
+.card2{
+
+  position :absolute;
+  top:137%;
+  left :32%;
+}
+.card3{
+
+  position :absolute;
+  top:137%;
+  left :52%;
+}
+.card4{
+
+  position :absolute;
+  top:137%;
+  left :72%;
+}
+
+
+.cardIcon1{
+    position :absolute;
+  top:260%;
+  left :35%;
+     
+}
+
+.cardIcon4{
+    position :absolute;
+  top:260%;
+  left :55%;
+   
+ 
+    
+}
+.cardGraphic{
+ position: absolute;
+    top: 260%;
+    left:75%;
+        
+}
+.cardIcon2{
+    
+    position: absolute;
+    top: 310%;
+    left: 75%
+}
+
+.cardIcon5{
+    position: absolute;
+    top: 310%;
+    left: 55%;
+    
+}
+.cardIcon6{
+    position: absolute;
+    top: 310%;
+    left: 42%;
+    
+}
+.cardButton{
+    background-color: wheat;
+    
+}
+
+
+/* side images */
+.cardadd1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+    position: absolute;
+    top: 370%;
+    left: 17%;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+
+
+/* flip styling */
+.cardadd2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+    position: absolute;
+    top: 370%;
+    left:42%;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+
+.cardadd3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+    position: absolute;
+    top: 370%;
+    left:67%;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.video iframe{
+    position: absolute;
+    background-size: cover;
+    height:80%;
+    width: 100%;
+    top: 455%;
+    
+    
+}
+.mySlides {
+   height: 70%;
+    width: 100%;
+
+
+}
