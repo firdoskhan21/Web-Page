@@ -1,0 +1,28 @@
+ <body ng-app='mainApp'>
+ 	
+<div ng-controller='MainCtrl'>
+	<div>
+		<h1>hello pease enter something...</h1>
+<input type="text" name="txtData" ng-model="txtData"/>
+<button type='button' ng-click='send();'>Send Data</button>
+
+	</div>
+
+</div>
+<div ng-controller='ctrl_scope'>
+	<div>
+		
+<div>{{txtData}}</div>
+</div>
+
+
+
+
+
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>  
+<script src="scope.js"></script>
+
+
+ </body>

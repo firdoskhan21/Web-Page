@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app="Validate_app">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>  
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+
+
+<body  ng-controller="ctrl_validate">
+
+
+
+
+
+<form  name="val_form" novalidate>
+
+<label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr" name="name" ng-model="txtName" required maxlength="50%">
+        <span style="color:purple" ng-show="val_form.name.$error.required"> Required! </span>
+    <span style="color: red" ng-show="val_form.name.$dirty&&val_form.name.$error.required">Please enter your name ... </span>
+       <br>
+         <label for="email">Enter your Email:</label>
+      <input type="text" class="form-control" name="email" ng-model="txtmail" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required />
+
+        <span style="color:purple" ng-show="val_form.email.$error.required"> Required! </span>
+        
+        <span style="color:Red" ng-show="val_form.email.$dirty&&val_form.email.$error.pattern">Please Enter Valid Email</span>
+        
+        <br />
+
+
+
+<label for="email">Enter your Phone no:</label>
+      <input type="text" class="form-control" name="phnum" ng-model="phNum" ng-pattern="/^[0-9]{1,10}$/" required />
+<span style="color:purple" ng-show="val_form.phnum.$error.required"> Required! </span>
+<span style="color:Red" ng-show="val_form.phnum.$dirty&&val_form.phnum.$error.pattern">Only Numbers Allowed, Maximum 10 Characters</span>
+
+<br>
+
+        Gender:
+       
+      <label><input type="radio" name="optradio" ng-model="gender1" required checked>Male</label>
+   
+         <label><input type="radio" name="optradio" ng-model="gender2" required checked>Female</label>
+     <br>
+
+        
+         <label for="qual">Enter your Qualification:</label>
+      <select class="form-control" id="sel1" ng-model="txtQl">
+        <option>BSC-IT</option>
+        <option>BE</option>
+        <option>BTech</option>
+        <option>Electronics</option>
+        <option>Civil Engineering</option>
+      </select>
+        
+       
+        
+         
+<br><br>
+<p>
+
+ 
+<button ng-disabled="val_form.name.$dirty && val_form.name.$invalid || 
+
+val_form.email.$dirty && valform.email.$invalid
+|| val_form.phnum.$dirty && val_form.phnum.$invalid || " ng-click='save()'
+>submit</button>
+
+</p>
+<div class="save" ui-view></div>
+</form>
+
+<script>
+var app = angular.module('Validate_app', []);
+app.controller('ctrl_validate', function($scope) {
+    $scope.txtName="";
+    $scope.txtmail="";
+    $scope.phNum="";
+    $scope.gender1="";
+    $scope.txtQl="";
+});
+
+</script>
+
+<br>
+  
+    
+    <center>
+<p><b>Name: {{txtName}}</b></p>
+<p><b>Email: {{txtmail}}</b></p>
+<p><b>Phone:{{phNum}}</b></p>
+<p><b>Gender: {{gender1}}</b></p>
+<p><b>Qualification: {{txtQl}}</b></p>
+</center>
+
+
+
+</body>
+</html>

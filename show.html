@@ -1,0 +1,16 @@
+<div ng-controller="showCtrl">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Email</td>
+            <td></td>
+        </tr>
+        <tr ng-repeat="data in data">
+            <td>{{data.Name}}</td>
+            <td>{{data.Address}}</td>
+            <td>{{data.Email}}</td>
+            <td><a href="#" ng-click="Edit(data)">{{$index+1}}</a></td>
+        </tr>
+    </table>
+</div>
